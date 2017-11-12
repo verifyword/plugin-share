@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>QQ空间</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/2.ico"/>
+		
+		<style type="text/css">
+			/*
+			 * 设置背景图片的大小与位置
+			 */
+			body {
+				background: url(img/bg.jpg);
+				background-size: 1366px 909px;
+				background-position: 0px -58px;
+				font-size: 10px;
+			}
+			
+			/* qzone_logo start */
+			/*
+			 * 设置logo的位置
+			 */
+			.qzone_logo {
+				position: absolute;
+				top: 95px;
+				left: 213px;
+			}
+			/* qzone_logo end */
+			
+			/* qzone_bottom start */
+			/* 
+			 * 设置li使用绝对定位
+			 */
+			.qzone_bottom .qzone_bottom_icon ul li {
+				position: absolute;
+				list-style: none;
+				text-align: center;
+				color: #fff;
+				width: 28px;
+				height: 28px;
+				cursor: pointer;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #fff;
+			}
+			
+			/*
+			 * 设置所有span使用绝对定位
+			 * 变为块级元素
+			 */
+			span {
+				color: #fff;
+				position: absolute;
+				width: 50px;
+				display: block;
+			}
+			
+			/*
+			 * 设置iphone图片显示的位置
+			 * 设置iphone文字显示的位置
+			 */
+			.ul_icon_iphone {
+				background: url(img/icon.png);
+				background-position: 60px -75px;
+				left: 490px;
+				bottom: 157px;
+			}
+			.span_iphone {
+				top: 30px;
+				left: -9px;
+			}
+			
+			/*
+			 * 设置ipad图片显示的位置
+			 * 设置ipad文字显示的位置
+			 */
+			.ul_icon_ipad {
+				background: url(img/icon.png);
+				background-position: -60px -103px;
+				left: 565px;
+				bottom: 159px;
+			}
+			.span_ipad {
+				top: 32px;
+				left: -11px;
+			}
+			
+			/*
+			 * 设置android图片显示的位置
+			 * 设置android文字显示的位置
+			 */
+			.ul_icon_android {
+				background: url(img/icon.png);
+				background-position: 28px -43px;
+				left: 639px;
+				bottom: 159px;
+			}
+			.span_android {
+				top: 32px;
+				left: -11px;
+			}
+			
+			/*
+			 * 设置windowsphone图片显示的位置
+			 * 设置windowsphone文字显示的位置
+			 */
+			.ul_icon_windowsphone {
+				background: url(img/icon.png);
+				background-position: 28px -102px;
+				left: 713px;
+				bottom: 160px;
+			}
+			.span_windowsphone {
+				top: 32px;
+				left: -11px;
+			}
+			
+			/*
+			 * 设置其它手机图片显示的位置
+			 * 设置其它手机文字显示的位置
+			 */
+			.ul_icon_other {
+				background: url(img/icon.png);
+				background-position: 28px -73px;
+				left: 786px;
+				bottom: 159px;
+			}
+			.span_other {
+				top: 32px;
+				left: -11px;
+			}
+			
+			.qzone_bottom .qzone_bottom_text {
+				position: absolute;
+				bottom: 32px;
+				left: 315px;
+				text-align: center;
+				line-height: 10px;
+			}
+			
+			p {
+				color: #fff;
+			}
+			
+			/*
+			 * 鼠标移动到链接时显示文字的下划线
+			 */
+			a:hover {
+				text-decoration: underline;
+			}
+			
+			.qzone_bottom .qzone_bottom_ben {
+				position: absolute;
+				bottom: 10px;
+				right: -300px;
+			}
+			/* qzone_bottom end */
+			
+			/* qzone_login start */
+			.qzone_login {
+				position: absolute;
+				top: 128px;
+				right: 213px;
+				width: 418px;
+				height: 316px;
+				background: white;
+			}
+			
+			.qzone_login .qzone_login_title {
+				font-family: "微软雅黑";
+				font-size: 20px;
+				color: #333;
+				margin-bottom: 16px;
+				text-align: center;
+				padding-top: 8px;
+			}
+			
+			.qzone_login .qzone_login_entry {
+				font-size: 16px;
+				color: #333;
+				text-align: center;
+			}
+			
+			.qzone_login .qzone_login_input_inputOuter {
+				position: relative;
+				top: 36px;
+				left: 74px;
+			}
+			
+			.qzone_login .qzone_login_input_inputOuter input {
+				width: 258px;
+				height: 38px;
+				font-family: arial;
+				font-size: 14px;
+				color: #aaa;
+				padding-left: 11px;
+				border-radius: 3px;
+				border: 1px solid #d6d6d6;
+				margin-bottom: 15px;
+			}
+			
+			.qzone_login .qzone_login_input_button button {
+				position: relative;
+				border-radius: 1px;
+				width: 272px;
+				height: 40px;
+				font-family: "微软雅黑";
+				font-size: 14px;
+				color: #fff;
+				border: none;
+				background: #86ce2f;
+				cursor: pointer;
+				top: 36px;
+				left: 73px;
+			}
+			
+			.qzone_login .qzone_login_a {
+				position: relative;
+				left: 200px;
+				top: 69px;
+			}
+			
+			.qzone_login .qzone_login_a a {
+				color: #666;
+				font-size: 12px;
+			}
+			/* qzone_login end */
+		</style>
+	</head>
+	<body>
+		<!-- qzone_logo start -->
+		<div class="qzone_logo">
+			<img src="img/logo.png" />
+		</div>
+		<!-- qzone_logo end -->
+		
+		<div class="qzone_bottom">
+			<div class="qzone_bottom_icon">
+				<ul>
+					<li class="ul_icon_iphone">
+						<a href="www.bigpar.com"><span class="span_iphone">iPhone</span></a>
+					</li>
+					<li class="ul_icon_ipad">
+						<a href="www.bigpar.com"><span class="span_ipad">iPad</span></a>
+					</li>
+					<li class="ul_icon_android">
+						<a href="www.bigpar.com"><span class="span_android">Android</span></a>
+					</li>
+					<li class="ul_icon_windowsphone">
+						<a href="www.bigpar.com"><span class="span_windowsphone">Windows Phone</span></a>
+					</li>
+					<li class="ul_icon_other">
+						<a href="www.bigpar.com"><span class="span_other">其它手机</span></a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="qzone_bottom_text">
+				<div class="copyright">
+					<p class="copyright_link">
+						<a href="http://support.qq.com/discuss/46_1.shtml" target="_blank" onclick="TCISD.pv('ihome.qzone.qq.com','bottom.suggestion');">反馈建议</a> |
+						<a href="//qzone.qzone.qq.com/" onclick="TCISD.pv('ihome.qzone.qq.com','bottom.officialqzone');"  target="_blank">官方空间</a> |
+						<a href="//act.qzone.qq.com/" onclick="TCISD.pv('ihome.qzone.qq.com','bottom.actqzone');"  target="_blank">空间活动</a> |
+						<a href="//my.qzone.qq.com/" onclick="TCISD.pv('ihome.qzone.qq.com','bottom.app');" target="_blank">空间应用</a> |
+						<a href="//user.qzone.qq.com/949589999/main" onclick="TCISD.pv('ihome.qzone.qq.com','bottom.original');" target="_blank">腾讯原创馆</a> |
+						<a href="http://connect.qq.com/" onclick="TCISD.pv('ihome.qzone.qq.com','bottom.connect');"  target="_blank">QQ互联</a> |
+						<a href="http://connect.qq.com/intro/login/" onclick="TCISD.pv('ihome.qzone.qq.com','bottom.qqlogin');"  target="_blank">QQ登录</a> |
+						<a href="http://connect.qq.com/intro/share/" onclick="TCISD.pv('ihome.qzone.qq.com','bottom.socialpackage');"  target="_blank">社交组件</a> |
+						<a href="http://wiki.open.qq.com/wiki/%E6%8A%95%E8%AF%89%E6%8C%87%E5%BC%95" onclick="TCISD.pv('ihome.qzone.qq.com','bottom.complaint');"  target="_blank">应用侵权投诉</a> |
+						<a href="http://wiki.open.qq.com/wiki/Tencent_Open_Platform_Complaint_Guidelines" onclick="TCISD.pv('ihome.qzone.qq.com','bottom.complaint_guildlines');"  target="_blank">Complaint Guidelines</a>
+					</p>
+						
+					<script>(function(){
+						var year = new Date().getFullYear();
+						if(year < 2016){
+							year = 2016
+						}
+						document.write('<p class="copyright_en">Copyright &copy; 2005 - '+year+' Tencent.<a target="_blank" href="http://www.tencent.com/en-us/le/copyrightstatement.shtml">All Rights Reserved.</a></p>');	
+					})()</script>
+						
+					<p class="copyright_cn">腾讯公司 <a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">版权所有</a> <a href="http://www.qq.com/culture.shtml" target="_blank">粤网文[2017]6138-1456号</a></p>
+				</div>
+					
+				<div class="qzone_bottom_ben">
+					<p><a href="www.bigpar.com">仿作品来自Ben</a></p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- qzone_login start -->
+		<div class="qzone_login">
+			<div class="qzone_login_title">帐号密码登录</div>
+			<div class="qzone_login_entry">推荐使用<a href="#" style="color: #3481cf;">快速安全登录</a>，防止盗号</div>
+			<div class="qzone_login_span">
+				<span class="qzone_login_span_spanText"></span>
+			</div>
+			<div class="qzone_login_input">
+				<div class="qzone_login_input_inputOuter">
+					<input value="支持QQ号/邮箱/手机号登录" />
+					<br />
+					<input value="密码" />
+				</div>
+				<div class="qzone_login_input_button">
+					<button>登&nbsp;录</button>
+				</div>
+			</div>
+			<div class="qzone_login_a">
+				<a href="#">忘了密码?&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">注册新账号&nbsp;&nbsp;|&nbsp;</a>
+				<a href="#">意见反馈</a>
+			</div>
+		</div>
+		<!-- qzone_login end -->
+	</body>
+</html>
