@@ -44,7 +44,7 @@
 			</div>
 		</div>
 		<!--动画展示区：E-->
-		<p class="my-clear"></p>
+		<p class="my-clear" id="distinguish"></p>
 
 		<!--内容显示区：S-->
 		<div class="container-fluid my-content-box center-block" id="listData">
@@ -123,7 +123,7 @@
             for (var i = 0; i < listdata.length; i++) {
                 var n = listdata[i];
                 //表格
-                var html = '<div class="col-sm-3 col-md-3 col-lg-3 my-content img-rounded">'+
+                var html = '<div class="col-sm-12 col-sm-6 col-md-4 col-lg-3 my-content img-rounded">'+
                     '<div class="my-inner-content img-rounded">'+
                     '<a href="/showDetail/'+n.id+'">'+
                 '<img src="'+n.image_big+'" class="img-responsive img-rounded my-content-img" />'+
