@@ -19,10 +19,15 @@ body{
 	background-color: rgba(0,0,0,.85);
 }
 .footer-template{
+	position: fixed;
+	bottom: 0px;
+	width:100%;
+
 	line-height: 40px;
 	min-height: 40px;
 	color: #B7B7B7;
 	background-color: rgba(0,0,0,.85);
+
 }
 /*
  工具类:S
@@ -50,6 +55,10 @@ header{
 	color: #B7B7B7;
 	text-decoration: none;
 }
+.header-content:visited{
+	color: #B7B7B7;
+	text-decoration: none;
+}
 .header-content a:hover{
 	color: #fff;
 	text-decoration: none;
@@ -58,10 +67,7 @@ header{
 	color: #fff;
 	text-decoration: none;
 }
-.header-content:visited{
-	color: #B7B7B7;
-	text-decoration: none;
-}
+
 .my-logo a{
 	color: #B7B7B7;
 	text-decoration: none;
@@ -107,6 +113,10 @@ header{
 	color: #fff;
 	text-decoration: none;
 }
+.my-sheader-container div  ul li a:visited{
+	color: #fff;
+	text-decoration: none;
+}
 .my-sheader-container div  ul li a:hover{
 	color: #fff;
 	text-decoration: none;
@@ -115,29 +125,26 @@ header{
 	color: #fff;
 	text-decoration: none;
 }
-.my-sheader-container div  ul li a:visited{
-	color: #fff;
-	text-decoration: none;
-}
+
 .my-second-list{
 	display: none;
 }
-footer div{
+footer div div{
 	min-width: 200px;
 }
-footer div a{
+footer div div a{
 	color: #B7B7B7;
 	text-decoration: none;
 }
-footer div a:link{
+footer div div a:link{
 	color: #B7B7B7;
 	text-decoration: none;
 }
-footer div a:hover{
+footer div div a:hover{
 	color: #fff;
 	text-decoration: none;
 }
-footer div a:active{
+footer div div a:active{
 	color: #fff;
 	text-decoration: none;
 }
@@ -213,15 +220,16 @@ a.my-content-a:link{
 	color: rgba(0,158,161,1);
 	text-decoration: none;
 }
-a.my-content-a:hover{
-	font-size: 1.5rem;
-	color: rgba(0,158,161,1);
-	text-decoration:underline;
-}
+
 a.my-content-a:visited{
 	font-size: 1.5rem;
 	color: rgba(0,158,161,1);
 	text-decoration: none;
+}
+a.my-content-a:hover{
+	font-size: 1.5rem;
+	color: rgba(0,158,161,1);
+	text-decoration:underline;
 }
 a.my-content-a:active{
 	font-size: 1.5rem;
